@@ -35,3 +35,12 @@ IV) Improvement
 - Pagination for list api (because we have unlimited articles)
 - Add api authorization
 - Add more test (discount price lower than net price case, ...)
+
+V) Some unclear points
+- Discounted value should never be lower than the net price in order to prevent a loss on the article. 
+? (In this case, use net price or undiscount?)
+
+- Each article can have multiple discount definitions, but only one can be
+applicable at a time.
+? (In this case, what is the order (priority)?)
+
